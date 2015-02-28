@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Rogueport",
+  "version": "0.1.0",
+  "description": "Implements postMessage APIs for sites that don't have one",
+  "content_scripts": [
+    {
+      "matches": ["*://www.netflix.com/*"],
+      "js": ["injectors/netflix.js"]
+    }
+  ],
+  "homepage_url": "https://rogueport.github.io",
+}
